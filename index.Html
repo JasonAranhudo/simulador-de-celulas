@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Simulação de Células</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="ui">
+    <div class="block">
+        Células:
+        <button onclick="changeCells(-1)">-</button>
+        <span id="cellCount">1</span>
+        <button onclick="changeCells(1)">+</button>
+    </div>
+
+    <div class="block">
+        Alimento:
+        <button onclick="changeFood(-1)">-</button>
+        <span id="foodCount">5</span>
+        <button onclick="changeFood(1)">+</button>
+    </div>
+
+    <div class="block">
+        Tempo:
+        <button onclick="changeTime(-1)">-</button>
+        <span id="timeScaleText">1x</span>
+        <button onclick="changeTime(1)">+</button>
+    </div>
+
+</div>
+
+<div id="themeMenu" class="hidden">
+    <button onclick="setTheme(0)">Cinza + Azul</button>
+    <button onclick="setTheme(1)">Azul + Cinza</button>
+</div>
+
+<canvas id="c"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
